@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+<libraryInfo home="/usr" version="1.8.2">
+<bootpath>
+<entry path="/usr/lib/ruby/site_ruby/1.8"/>
+<entry path="/usr/lib/ruby/site_ruby/1.8/universal-darwin8.0"/>
+<entry path="/usr/lib/ruby/site_ruby"/>
+<entry path="/usr/lib/ruby/1.8"/>
+<entry path="/usr/lib/ruby/1.8/universal-darwin8.0"/>
+</bootpath>
+</libraryInfo>
+</libraryInfos>

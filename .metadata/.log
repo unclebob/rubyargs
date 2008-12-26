@@ -1,0 +1,53 @@
+!SESSION 2007-05-17 16:34:35.380 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_07
+java.vendor=Apple Computer, Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/unclebob/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -keyring /Users/unclebob/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY com.aptana.ide.rcp.main 1 0 2007-05-17 16:34:38.840
+!MESSAGE (Build 0.2.8.14477) Bound Aptana to port 9980
+
+!ENTRY com.aptana.ide.core.ui 1 0 2007-05-17 16:35:36.557
+!MESSAGE (Build 0.2.8.14477) Connected to database aptanaDB 
+
+!ENTRY com.aptana.ide.core.ui 1 0 2007-05-17 16:35:50.312
+!MESSAGE (Build 0.2.8.14477) current Aptana build number
+
+!ENTRY com.aptana.ide.scripting 1 0 2007-05-17 16:35:51.153
+!MESSAGE (Build 0.2.8.14477) Scripting server started on port 9000
+
+!ENTRY com.aptana.ide.core.ui 1 0 2007-05-17 16:43:29.155
+!MESSAGE (Build 0.2.8.14477) Database shut down normally 
+!SESSION 2007-05-17 16:43:43.758 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_07
+java.vendor=Apple Computer, Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/unclebob/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -keyring /Users/unclebob/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY com.aptana.ide.rcp.main 1 0 2007-05-17 16:43:45.229
+!MESSAGE (Build 0.2.8.14477) Bound Aptana to port 9980
+
+!ENTRY com.aptana.ide.core.ui 1 0 2007-05-17 16:43:50.892
+!MESSAGE (Build 0.2.8.14477) Connected to database aptanaDB 
+
+!ENTRY com.aptana.ide.core.ui 1 0 2007-05-17 16:44:00.479
+!MESSAGE (Build 0.2.8.14477) current Aptana build number
+
+!ENTRY com.aptana.ide.scripting 1 0 2007-05-17 16:44:00.928
+!MESSAGE (Build 0.2.8.14477) Scripting server started on port 9000
+
+!ENTRY org.eclipse.osgi 2 1 2007-05-17 16:44:01.812
+!MESSAGE NLS unused message: ExtractConstantInputPage_enter_name in: org.rubypeople.rdt.internal.refactoring.RefactoringMessages
+
+!ENTRY org.eclipse.osgi 2 1 2007-05-17 16:44:01.813
+!MESSAGE NLS unused message: ExtractConstantInputPage_signature_preview in: org.rubypeople.rdt.internal.refactoring.RefactoringMessages
+
+!ENTRY org.eclipse.osgi 2 1 2007-05-17 16:44:01.813
+!MESSAGE NLS unused message: ExtractConstantInputPage_exception in: org.rubypeople.rdt.internal.refactoring.RefactoringMessages
+
+!ENTRY com.aptana.ide.core.ui 1 0 2007-05-17 16:47:48.154
+!MESSAGE (Build 0.2.8.14477) Database shut down normally 
