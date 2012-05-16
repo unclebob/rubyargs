@@ -7,7 +7,10 @@ class Args
 
   class Parser
     def initialize
-      @args = {}
+      @bool_args = {}
+      @number_args = {}
+      @string_args = {}
+      @unexpected_args = []
       @valid = true;
     end
 
@@ -15,102 +18,53 @@ class Args
       @valid
     end
 
-    def [](name)
-      @args[name].value
+    def boolean(args)
+      args.split(",").each do |name|
+        @bool_args[name] = false;
+      end
+    end
+
+    def number(args)
+      args.split(",").each do |name|
+        @number_args[name] = 0
+      end
+    end
+
+    def string(args)
+      args.split(",").each do |name|
+        @string_args[name] = ""
+      end
     end
 
     def parse(arguments)
-      parse_argument(arguments) until arguments.empty?
-    end
+      index = 0;
 
-    private
+      while index < arguments.length do
+        argument = arguments[index]
+        index += 1
+        if argument[0, 1] == '-'
+          name = argument[1..-1]
+          if @bool_args.has_key?(name)
+            @bool_args[name] = true
+          elsif @number_args.has_key?(name)
+            @number_args[name] = arguments[index].to_f
+            index += 1
+          elsif @string_args.has_key?(name)
+            @string_args[name] = arguments[index].dup
+            index += 1
+          else
+            @unexpected_args << name
+            @valid = false
+          end
+        end
+      end
 
-    def parse_argument(arguments)
-      argument = arguments.shift
-      if is_flag?(argument)
-        name = get_argument_name(argument)
-        set_argument_value(name, arguments)
+      def [](name)
+        return @bool_args[name] if @bool_args.has_key? name
+        return @number_args[name] if @number_args.has_key? name
+        return @string_args[name] if @string_args.has_key? name
       end
     end
-
-    def is_flag?(argument)
-      argument[0, 1] == '-'
-    end
-    
-    def set_argument_value(name, arguments)
-      if @args.has_key?(name)
-        @args[name].set_value(arguments)
-      else
-        @valid = false
-      end
-    end
-
-    def get_argument_name(argument)
-      argument[1..-1]
-    end
-
-    def declare_arguments(args, marshaler)
-      args.split(",").each {|name| @args[name] = marshaler.new}
-    end
-
-    def self.add_declarator(name, marshaler)
-      method_text = "def #{name}(args) declare_arguments(args, #{marshaler}) end"
-      Parser.module_eval(method_text)
-    end
-  end  #Parser
-
-  class BoolMarshaler
-    Parser.add_declarator("boolean", self.name)
-    attr_accessor :value
-
-    def initialize
-      @value = false;
-    end
-
-    def set_value(arguments)
-      @value = true
-    end
   end
+end
 
-  class NumberMarshaler
-    Parser.add_declarator("number", self.name)
-    attr_accessor :value
-
-    def initialize
-      @value = 0
-    end
-
-    def set_value(arguments)
-      @value = arguments.shift.to_f
-    end
-  end
-
-  class StringMarshaler
-    Parser.add_declarator("string", self.name)
-    attr_accessor :value
-
-    def initialize
-      @value = ""
-    end
-
-    def set_value(arguments)
-      @value = arguments.shift.dup
-    end
-  end
-
-  class NumberListMarshaler
-    Parser.add_declarator("number_list", self.name)
-    attr_accessor :value
-
-    def initialize
-      @value = []
-    end
-
-    def set_value(arguments)
-      string_list = arguments.shift
-      string_list.split(",").each {|string|
-        @value << string.to_f
-      }
-    end
-  end
-end #Args

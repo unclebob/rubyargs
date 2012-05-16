@@ -16,38 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54a0f63-124e-4d06-a0ce-e58ae8c0382a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/com.aptana.ide.core/save-3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/com.aptana.ide.core.3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.aptana.ide.core.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.aptana.ide.rcp.main.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.rubypeople.rdt.launching.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.rubypeople.rdt.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.core/.launches/Default.launch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workbench.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui/dialog_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.update.ui/dialog_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.rubypeople.rdt.core/variablesAndContainers.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.rubypeople.rdt.launching/libraryInfos.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Args.iml" afterPath="$PROJECT_DIR$/Args.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Args.ipr" afterPath="$PROJECT_DIR$/Args.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Args.iws" afterPath="$PROJECT_DIR$/Args.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/args_spec.rb" afterPath="$PROJECT_DIR$/args_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/args.rb" afterPath="$PROJECT_DIR$/args.rb" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +151,7 @@
       <file leaf-file-name="args_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/args_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="15" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+            <state line="14" column="2" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,19 +166,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="args.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="args.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/args.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="34" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0">
+            <state line="7" column="14" selection-start="123" selection-end="123" vertical-scroll-proportion="-1.8045325">
               <folding />
             </state>
           </provider>
@@ -235,6 +205,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/args_spec.rb" />
+        <option value="$PROJECT_DIR$/args.rb" />
       </list>
     </option>
   </component>
@@ -396,7 +367,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="Ruby.Main">
+  <component name="RunManager" selected="RSpec.args_spec">
     <configuration default="false" name="args_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Args" />
@@ -682,7 +653,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.118589744" sideWeight="0.6792976" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -807,16 +778,16 @@
         <state line="26" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="0.3321492" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/args_spec.rb">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="15" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/args.rb">
+    <entry file="file://$PROJECT_DIR$/args_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="34" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0">
+        <state line="14" column="2" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -828,9 +799,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/args.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="14" selection-start="123" selection-end="123" vertical-scroll-proportion="-1.8045325">
           <folding />
         </state>
       </provider>
