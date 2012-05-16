@@ -139,25 +139,6 @@ describe Args, "With a complex schema" do
   end
 end
 
-describe Args, "With a single number-list element" do
-  before do
-    @parser = Args.expect do
-      number_list "l"
-    end
-  end
-
-  it "should report empty list if no argument" do
-    @parser.parse []
-    @parser.should be_valid
-    @parser["l"].should be_empty
-  end
-
-  it "should assign list of numbers from argument" do
-    @parser.parse %w(-l 1,2,3,4)
-    @parser.should be_valid
-    @parser["l"].should == [1, 2, 3, 4]
-  end
-end
 
 
 
