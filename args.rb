@@ -8,7 +8,7 @@ class Args
   class Parser
     def initialize
       @args = {}
-      @valid = true;
+      @valid = true
     end
 
     def valid?
