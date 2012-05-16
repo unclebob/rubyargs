@@ -1,6 +1,6 @@
 require 'rubygems'
 gem 'rspec'
-require 'spec'
+require 'rspec'
 require 'args'
 
 describe Args, "With no arguments" do
