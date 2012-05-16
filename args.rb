@@ -1,3 +1,21 @@
+#An argument parser.  You use it like this:
+#
+#def main()
+#  parser = Args.expect do
+#    boolean "l,v"
+#    number "p"
+#    string "d"
+#  end
+#
+#  parser.parse(ARGV)
+#  logging = parser["l"]
+#  verbose = parser["v"]
+#  port = parser["p"]
+#  directory = parser["d"]
+#
+#  #...
+#end
+
 class Args
   def self.expect &proc
     parser = Parser.new
@@ -7,10 +25,10 @@ class Args
 
   class Parser
     def initialize
-      @bool_args = {}
-      @number_args = {}
-      @string_args = {}
-      @unexpected_args = []
+      @bools = {}
+      @nums = {}
+      @strings = {}
+      @unex = []
       @valid = true;
     end
 
@@ -18,51 +36,59 @@ class Args
       @valid
     end
 
+    #---------------------------------------------
+    # The argument flags: boolean, number, string
+    #---------------------------------------------
+
     def boolean(args)
-      args.split(",").each do |name|
-        @bool_args[name] = false;
+      args.split(",").each do |arg|
+        @bools[arg] = false;
       end
     end
 
     def number(args)
-      args.split(",").each do |name|
-        @number_args[name] = 0
+      args.split(",").each do |arg|
+        @nums[arg] = 0
       end
     end
 
     def string(args)
-      args.split(",").each do |name|
-        @string_args[name] = ""
+      args.split(",").each do |arg|
+        @strings[arg] = ""
       end
     end
 
-    def parse(arguments)
-      index = 0;
+    #
+    # Parse the command line
+    #
+    
+    def parse(args)
+      i = 0;
 
-      while index < arguments.length do
-        argument = arguments[index]
-        index += 1
-        if argument[0, 1] == '-'
-          name = argument[1..-1]
-          if @bool_args.has_key?(name)
-            @bool_args[name] = true
-          elsif @number_args.has_key?(name)
-            @number_args[name] = arguments[index].to_f
-            index += 1
-          elsif @string_args.has_key?(name)
-            @string_args[name] = arguments[index].dup
-            index += 1
+      while i < args.length do
+        arg = args[i]
+        i += 1
+        if arg[0, 1] == '-'
+          name = arg[1..-1]
+          if @bools.has_key?(name)
+            @bools[name] = true
+          elsif @nums.has_key?(name)
+            @nums[name] = args[i].to_f
+            i += 1
+          elsif @strings.has_key?(name)
+            @strings[name] = args[i].dup
+            i += 1
           else
-            @unexpected_args << name
+            @unex << name
             @valid = false
           end
         end
       end
 
-      def [](name)
-        return @bool_args[name] if @bool_args.has_key? name
-        return @number_args[name] if @number_args.has_key? name
-        return @string_args[name] if @string_args.has_key? name
+      def [](arg)
+        return @bools[arg] if @bools.has_key? arg
+        return @nums[arg] if @nums.has_key? arg
+        return @strings[arg] if @strings.has_key? arg
       end
     end
   end
